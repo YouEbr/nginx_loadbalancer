@@ -2,7 +2,7 @@
 
 This show cases use of NGINX container to load balance the incoming traffic to upstream servers. 
 
-####Version 1.0: (tag v1.0)
+#### Version 1.0: (tag v1.0)
 
 To keep it simple, this version assumes that there are two different applications (app1, app2) and nginx server load balances the incoming traffic to either using round robin algorithm
 
@@ -18,7 +18,7 @@ Then direct your web browser to "http://localhost:8080/". Refresh the page multi
 * Relevant files/folders for this version are: app1, app2, nginx, and docker-compose.yml
 
 
-####Version 2.0: (tag v2.0)
+#### Version 2.0: (tag v2.0)
 
 This version scales up a single app (app-scalable) and uses NginX server to load balance the incoming traffic to running upstreams.
 

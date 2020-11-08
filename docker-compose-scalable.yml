@@ -1,0 +1,13 @@
+version: '3'
+services:
+  webapp:        # same name is used in nginx-scalable/nginx.config
+    build: ./app-scalable
+    ports:
+      - "5000"  # not specifying the host port to allow for scaling up.
+
+  nginx:
+    build: ./nginx-scalable
+    ports:
+      - "8080:80"
+    depends_on:
+      - webapp
